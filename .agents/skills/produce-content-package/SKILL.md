@@ -31,7 +31,7 @@ Begin with a question, consequence, failure, or decision the viewer recognizes. 
 
 ## Draft the post
 
-Write `script.md` only after research is complete.
+Read `references/draft-craft.md` first — it is the tested craft ruleset and outranks generic social-media advice. Write `script.md` only after research is complete.
 
 - Target the format's length; get to why the viewer cares immediately.
 - Conversational language the creator can say naturally; use the voice notes in `context/profile.md`, and mark where their judgment or lived example must replace a placeholder — never invent their firsthand experience.

@@ -27,7 +27,7 @@ context/                   Your profile (created by /onboard)
 4. Pick an idea, run **`/produce-content-package`**, review every claim, rewrite the script until it sounds like you, shoot it, publish it yourself.
 5. Report your numbers back with **`/review-content-performance`**. Judge nothing on one post.
 
-Optional but recommended: `ffmpeg` + `whisper-cpp` (footage review: transcribe takes, pick keepers, assemble rough cuts) and the Claude in Chrome extension (feed research).
+Optional but recommended: `ffmpeg` + `whisper-cpp` (footage review: transcribe takes, pick keepers, assemble rough cuts), the Claude in Chrome extension (feed research), and the community **marketing-skills** plugin for the broader marketing surface (copywriting, launches, CRO) — where its generic advice conflicts with this repo's tested rules, this repo wins.
 
 ## The rules that make it work
 
