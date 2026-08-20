@@ -1,0 +1,66 @@
+{
+  "author": "Franco Valdes",
+  "slides": [
+    {
+      "type": "cover",
+      "eyebrow": ["AI Memory", "ChatGPT + Claude"],
+      "h1": "Everyone at work uses ChatGPT and Claude.",
+      "h2": "Almost nobody knows what they remember.",
+      "cue": "3 failures, 3 fixes"
+    },
+    {
+      "type": "concept",
+      "eyebrow": ["How it works"],
+      "title": "Your AI has two memories.",
+      "boxes": [
+        ["Long-term", "A profile built from your chats. A synthesis, not a transcript."],
+        ["Short-term", "The current conversation. It degrades as the chat gets long."]
+      ],
+      "tail": "They fail in different ways."
+    },
+    {
+      "type": "fix",
+      "eyebrow": ["Failure 1 of 3"],
+      "title": "Long chats start ignoring your instructions.",
+      "body": "Models pay the most attention to the start and end of a conversation. The middle gets blurry.",
+      "fix": "Restate the rule right before the task, or start a fresh chat."
+    },
+    {
+      "type": "fix",
+      "eyebrow": ["Failure 2 of 3"],
+      "title": "It remembers wrong or stale things.",
+      "body": "Any chat can feed your profile. Help a friend with a resume and it might think you're job hunting.",
+      "fix": "Keep one-offs in Temporary Chat (ChatGPT) or Incognito (Claude). Then edit the memory page."
+    },
+    {
+      "type": "fix",
+      "eyebrow": ["Failure 3 of 3"],
+      "title": "Important context doesn't carry over.",
+      "body": "Memory keeps highlights, not transcripts. What it considered minor may simply be gone.",
+      "fix": "Pin must-haves in Custom Instructions (ChatGPT) or a Project (Claude)."
+    },
+    {
+      "type": "statement",
+      "eyebrow": ["The one everyone gets wrong"],
+      "title": "Deleting a chat does not delete what it learned.",
+      "body": "True in ChatGPT and Claude, and both vendors document it. Removing the memory is a separate step."
+    },
+    {
+      "type": "statement",
+      "eyebrow": ["The part that matters at work"],
+      "title": "Private mode is not invisible to your company.",
+      "body": "On Claude Team and Enterprise plans, incognito chats still follow your org's data retention policy.",
+      "aside": "Worth knowing what your ChatGPT workspace is set to as well."
+    },
+    {
+      "type": "action",
+      "eyebrow": ["Do this today"],
+      "title": "Ten minutes with your team:",
+      "chips": [
+        "ChatGPT:  Settings > Personalization > Memory",
+        "Claude:  Settings > Memory"
+      ],
+      "tail": "Read what's in there. Fix what's wrong."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# CLAUDE
+
+Read `AGENTS.md`.
