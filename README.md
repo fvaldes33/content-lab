@@ -1,5 +1,7 @@
 # content-lab
 
+![content-lab: the content pipeline, run by an agent](.github/social-preview.png)
+
 A content production system for one human and one AI agent. The agent does the evidence work — research, source ledgers, fact-check tables, script drafts, footage review, metrics logging. You keep the judgment — what's worth making, what sounds like you, and what gets killed.
 
 Built and used in public by [Franco Valdes](https://www.instagram.com/itsfrancovaldes/). Honest disclosure up front: this system will not make your content go viral. Its author's biggest post while building it was a 20-minute meme, not the researched stuff. What the system does is make your content **accurate, consistent, and fast enough to keep shipping** — and it keeps you honest while you learn what actually works for you.
