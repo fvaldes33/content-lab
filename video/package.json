@@ -1,0 +1,36 @@
+{
+  "name": "content-lab-video",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . && tsc --noEmit",
+    "campaign:new": "node scripts/new-campaign.mjs",
+    "stills": "node scripts/stills.mjs",
+    "score": "python3 scripts/score.py",
+    "deliver:appstore": "node scripts/deliver-appstore.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.529",
+    "@remotion/cli": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "@remotion/renderer": "4.0.529",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.529",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.529",
+    "@types/react": "19.2.7",
+    "@types/node": "22.20.0",
+    "eslint": "^9.30.0",
+    "puppeteer-core": "^25.9.0",
+    "typescript": "^5.9.3"
+  }
+}

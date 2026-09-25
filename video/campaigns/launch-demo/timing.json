@@ -1,0 +1,202 @@
+{
+  "fps": 30,
+  "scenes": {
+    "open": {
+      "from": 0,
+      "dur": 162,
+      "cues": {
+        "dock": 44,
+        "card": 56,
+        "stamp": 74,
+        "pill": 98,
+        "exit": 150,
+        "note": 116
+      }
+    },
+    "team": {
+      "from": 154,
+      "dur": 202,
+      "cues": {
+        "dock": 42,
+        "header": 56,
+        "bubble": 64,
+        "pills": 80,
+        "pillGap": 22,
+        "card": 150,
+        "exit": 190
+      }
+    },
+    "list": {
+      "from": 348,
+      "dur": 144,
+      "cues": {
+        "dock": 36,
+        "card": 48,
+        "tick1": 64,
+        "tick2": 72,
+        "tick3": 80,
+        "cursor": 84,
+        "press": 104,
+        "exit": 132
+      }
+    },
+    "close": {
+      "from": 484,
+      "dur": 126,
+      "cues": {
+        "items": 34,
+        "itemGap": 8,
+        "exit": 114
+      }
+    },
+    "cta": {
+      "from": 602,
+      "dur": 78,
+      "cues": {
+        "name": 44
+      }
+    }
+  },
+  "typing": {
+    "open": {
+      "at": 3,
+      "fpc": 1.5,
+      "text": "handled."
+    },
+    "team": {
+      "at": 6,
+      "fpc": 1.5,
+      "text": "They work\ntogether."
+    },
+    "list": {
+      "at": 6,
+      "fpc": 1.5,
+      "text": "Deadlines,\ncaught."
+    },
+    "close": {
+      "at": 4,
+      "fpc": 1.4,
+      "text": "Less\nbusywork."
+    },
+    "cta": {
+      "at": 8,
+      "fpc": 1.5,
+      "text": "Get your week\nback."
+    }
+  },
+  "sound": {
+    "bpm": 120,
+    "grooveAt": {
+      "scene": "open",
+      "cue": "dock"
+    },
+    "events": [
+      {
+        "scene": "open",
+        "cue": "card",
+        "kind": "pop",
+        "pitch": 1050
+      },
+      {
+        "scene": "open",
+        "cue": "stamp",
+        "kind": "tick"
+      },
+      {
+        "scene": "open",
+        "cue": "pill",
+        "kind": "pop",
+        "pitch": 1250
+      },
+      {
+        "scene": "open",
+        "cue": "note",
+        "kind": "pop",
+        "pitch": 1470
+      },
+      {
+        "scene": "team",
+        "kind": "hit"
+      },
+      {
+        "scene": "team",
+        "cue": "header",
+        "kind": "pop",
+        "pitch": 900
+      },
+      {
+        "scene": "team",
+        "cue": "bubble",
+        "kind": "pop",
+        "pitch": 1100
+      },
+      {
+        "scene": "team",
+        "cue": "pills",
+        "kind": "pop",
+        "pitch": 1047
+      },
+      {
+        "scene": "team",
+        "cue": "pills",
+        "plus": 22,
+        "kind": "pop",
+        "pitch": 1175
+      },
+      {
+        "scene": "team",
+        "cue": "pills",
+        "plus": 44,
+        "kind": "pop",
+        "pitch": 1319
+      },
+      {
+        "scene": "team",
+        "cue": "card",
+        "kind": "pop",
+        "pitch": 1000
+      },
+      {
+        "scene": "list",
+        "kind": "hit"
+      },
+      {
+        "scene": "list",
+        "cue": "card",
+        "kind": "pop",
+        "pitch": 1000
+      },
+      {
+        "scene": "list",
+        "cue": "tick1",
+        "kind": "tick"
+      },
+      {
+        "scene": "list",
+        "cue": "tick2",
+        "kind": "tick"
+      },
+      {
+        "scene": "list",
+        "cue": "tick3",
+        "kind": "tick"
+      },
+      {
+        "scene": "list",
+        "cue": "press",
+        "kind": "tick"
+      },
+      {
+        "scene": "list",
+        "cue": "press",
+        "plus": 4,
+        "kind": "chime",
+        "pitch": 1318.5
+      },
+      {
+        "scene": "close",
+        "kind": "hit"
+      }
+    ]
+  }
+}

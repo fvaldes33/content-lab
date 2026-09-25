@@ -10,12 +10,16 @@ Built and used in public by [Franco Valdes](https://www.instagram.com/itsfrancov
 
 ```
 AGENTS.md                  Operating rules the agent follows (honesty, claims, privacy, economics)
-.agents/skills/            The four skills (also symlinked into .claude/skills)
-  onboard/                 Interview that builds YOUR profile, strategy, and boundaries
+.agents/skills/            The five skills (also symlinked into .claude/skills)
+  onboard/                 Interview that builds YOUR profile, strategy, boundaries, and brand pack
   produce-content-package/ Turns a selected idea into a fact-checked, recording-ready package
   research-feed-patterns/  Live-browses your feeds to study what's working (read-only)
   review-content-performance/ Turns published-post metrics into decisions
+  create-brand-video/      Produces a Remotion-rendered product video (App Store preview, launch demo, social cut)
+brand/                     Your brand: tokens, voice, product truth, logo and screenshots (from /onboard)
+video/                     The video studio: motion kit, worked example, score + delivery scripts
 templates/post-package/    The seven files every serious package gets
+templates/video-campaign/  The brief every brand video gets
 examples/001-chatgpt-memory/ A real published package, unretouched — small numbers included
 content/                   Your ideas, published packages, research notes, metrics
 context/                   Your profile (created by /onboard)
@@ -30,6 +34,22 @@ context/                   Your profile (created by /onboard)
 5. Report your numbers back with **`/review-content-performance`**. Judge nothing on one post.
 
 Optional but recommended: `ffmpeg` + `whisper-cpp` (footage review: transcribe takes, pick keepers, assemble rough cuts), the Claude in Chrome extension (feed research), and the community **marketing-skills** plugin for the broader marketing surface (copywriting, launches, CRO) — where its generic advice conflicts with this repo's tested rules, this repo wins.
+
+## Brand videos
+
+For a product or company, content-lab also makes launch-demo style videos: big type that
+docks into a header while your real product UI pops out and tells the story, an original
+synthesized score, delivered to App Store preview spec (886×1920) and vertical social
+(1080×1920).
+
+1. Run **`/onboard`** and do the brand batch: point it at your site, repo, design exports or
+   screenshots. It writes `brand/` from your real tokens, fonts, logo and claims.
+2. Run **`/create-brand-video`**. It briefs you, builds your product surfaces, choreographs
+   the scenes, shows you stills for approval, scores it, renders, and checks the export.
+3. You review, give notes, and upload it yourself.
+
+Needs Node 20+, `ffmpeg`, and `python3` with `numpy`. See `video/README.md`; the worked
+example is `video/campaigns/launch-demo/` (in the fictional placeholder brand until you onboard yours).
 
 ## The rules that make it work
 

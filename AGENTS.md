@@ -1,10 +1,10 @@
 # Operating Rules
 
-This repository is a content production system operated by one human creator and one AI agent. The agent does evidence work; the creator does judgment. Read `context/profile.md` and `content/STRATEGY.md` before any content task — if they don't exist, run the `onboard` skill first and do nothing else.
+This repository is a content production system operated by one human creator and one AI agent. The agent does evidence work; the creator does judgment. Read `context/profile.md` and `content/STRATEGY.md` before any content task — if they don't exist, run the `onboard` skill first and do nothing else. When the creator has a product or company, `brand/` holds its tokens, voice, product truth and assets; read `brand/product.md` before any claim about the product.
 
 ## Division of labor
 
-**The agent:** research, source ledgers, fact-check tables, script drafts, captions, visual plans, repurposing, footage transcription and review, rough-cut assembly, metrics logging, performance analysis.
+**The agent:** research, source ledgers, fact-check tables, script drafts, captions, visual plans, repurposing, footage transcription and review, rough-cut assembly, brand video production (`video/`), metrics logging, performance analysis.
 
 **The creator, always:** what's worth making, final wording and voice, recording, the kill decision, publishing, replying to their audience, and any judgment involving their family, employer, or reputation.
 
@@ -30,6 +30,10 @@ Unselected ideas stay lightweight (a line in a research note). When the creator 
 
 When raw footage lands in a package folder: transcribe every take, identify keepers and false starts, verify spoken claims against the fact-check table, check every frame for private information (names, screens, documents, locations, bystanders), and assemble a rough cut when useful. Flag problems; never decide alone that footage is fine to publish. A privacy finding blocks publish until the creator confirms the fix.
 
+## Brand videos
+
+`create-brand-video` produces Remotion-rendered product videos in `video/` from the brand pack. The same evidence rules apply to motion: every on-screen line and UI surface traces to `brand/product.md`, a real screen, or a design the creator approved, and invented demo copy is listed for the creator. Never render in the placeholder brand. Stills are approved before any full render; the creator uploads and publishes. App Store preview media never mentions price, trials or terms. Craft defaults and their reasons live in `video/references/craft.md`.
+
 ## Privacy boundary
 
 Set per-creator during onboarding, but these are floors, not defaults to negotiate:
@@ -52,10 +56,6 @@ Normal post: 45–90 minutes total. Quick response: 30–60. Anything longer mus
 ## Demand signals
 
 Audience requests are signals, not build orders. Log repeated, specific requests (three independent people asking for substantially the same thing) in `content/research/demand-signals.md` with links to the source posts. One enthusiastic comment is not demand.
-
-## What this system refuses to produce
-
-Engagement bait, fake urgency, invented certainty, prompt-hack listicles, income-claim theater, motivational filler, undisclosed sponsorships, or content that borrows authority the creator hasn't earned. The onboarding interview adds the creator's personal "never become this" list; enforce it.
 
 ## Improving these rules
 
