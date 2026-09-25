@@ -85,7 +85,6 @@
     }
   },
   "sound": {
-    "bpm": 120,
     "grooveAt": {
       "scene": "open",
       "cue": "dock"
@@ -95,7 +94,7 @@
         "scene": "open",
         "cue": "card",
         "kind": "pop",
-        "pitch": 1050
+        "step": 3
       },
       {
         "scene": "open",
@@ -106,13 +105,13 @@
         "scene": "open",
         "cue": "pill",
         "kind": "pop",
-        "pitch": 1250
+        "step": 5
       },
       {
         "scene": "open",
         "cue": "note",
         "kind": "pop",
-        "pitch": 1470
+        "step": 6
       },
       {
         "scene": "team",
@@ -122,39 +121,39 @@
         "scene": "team",
         "cue": "header",
         "kind": "pop",
-        "pitch": 900
+        "step": 2
       },
       {
         "scene": "team",
         "cue": "bubble",
         "kind": "pop",
-        "pitch": 1100
+        "step": 4
       },
       {
         "scene": "team",
         "cue": "pills",
         "kind": "pop",
-        "pitch": 1047
+        "step": 4
       },
       {
         "scene": "team",
         "cue": "pills",
         "plus": 22,
         "kind": "pop",
-        "pitch": 1175
+        "step": 5
       },
       {
         "scene": "team",
         "cue": "pills",
         "plus": 44,
         "kind": "pop",
-        "pitch": 1319
+        "step": 6
       },
       {
         "scene": "team",
         "cue": "card",
         "kind": "pop",
-        "pitch": 1000
+        "step": 3
       },
       {
         "scene": "list",
@@ -164,7 +163,7 @@
         "scene": "list",
         "cue": "card",
         "kind": "pop",
-        "pitch": 1000
+        "step": 3
       },
       {
         "scene": "list",
@@ -191,7 +190,7 @@
         "cue": "press",
         "plus": 4,
         "kind": "chime",
-        "pitch": 1318.5
+        "step": 6
       },
       {
         "scene": "close",

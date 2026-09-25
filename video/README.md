@@ -21,7 +21,8 @@ macOS: `brew install ffmpeg` and `pip3 install numpy`.
 ```bash
 npm run studio                                   # live preview in the browser
 npm run stills -- LaunchDemoAppStore 30 120 300  # review frames + contact sheet in out/stills/
-npm run score -- launch-demo                     # synth score from campaigns/launch-demo/timing.json
+npm run score -- launch-demo                     # original score, unique per brand + campaign
+npm run score -- launch-demo --seed take-2       # reroll; pin the printed settings in timing.json
 npm run render -- LaunchDemoVertical out/launch-demo.mp4
 npm run deliver:appstore -- LaunchDemoAppStore   # App Store-ready file + 2x master in out/deliver/
 npm run campaign:new -- spring-launch            # new campaign from the example, registered

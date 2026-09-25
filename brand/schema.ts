@@ -50,6 +50,11 @@ export type BrandPack = {
     pace: "measured" | "steady" | "snappy";
     radius: number;
   };
+  /** Music identity for generated scores (video/scripts/score.py). Every video from the
+   * brand shares the family (tempo range, instrument, drum feel); each campaign varies. */
+  sound?: {
+    mood: "warm" | "bright" | "driving" | "calm";
+  };
   voice: {
     tone: string[];
     avoid: string[];

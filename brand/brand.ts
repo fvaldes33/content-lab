@@ -39,6 +39,9 @@ export const brand = defineBrand({
     pace: "steady",
     radius: 22,
   },
+  sound: {
+    mood: "bright",
+  },
   voice: {
     tone: ["clear", "warm", "confident"],
     avoid: ["hype", "fake urgency", "jargon"],

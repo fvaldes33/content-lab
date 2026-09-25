@@ -79,7 +79,10 @@ fix and re-render before showing anything. Then show the creator the contact she
 ## 5. Sound, render, verify
 
 1. `npm run score -- <slug>` (edit `sound.events` in timing.json first: pops for popouts,
-   ticks for checks and taps, hits on scene landings; keep the close and CTA clean).
+   ticks for checks and taps, hits on scene landings, `step` 0–9 for in-key pitch with
+   rising steps for sequences; keep the close and CTA clean). The score is unique per brand
+   and campaign; if the creator dislikes it, reroll with `--seed <anything>`, and once they
+   like one, pin the printed settings into timing.json `sound` so re-renders keep it.
 2. Full render: `npm run render -- <Pascal>Vertical out/<slug>-vertical.mp4` and/or
    `npm run deliver:appstore -- <Pascal>AppStore`.
 3. Verify the *exported file*: contact sheet with

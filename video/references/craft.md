@@ -30,7 +30,11 @@ App Store preview. Treat these as defaults with reasons, not laws.
 
 ## Sound
 
-- A soft music bed with a groove that kicks in when the product appears.
+- Every score is original and generated per campaign: the brand's `sound.mood` sets the
+  family (tempo range, instrument, drum feel) so a brand sounds consistent, and a seed picks
+  the key, mode, progression and patterns so campaigns don't sound identical. Reroll with
+  `--seed`, then pin the printed settings in `timing.json` once the creator likes one.
+- A music bed with a groove that kicks in when the product appears.
 - Sparse UI sounds: a pop per popout, a tick per check/stamp/tap, a low hit on scene
   landings. Rising pitches for a sequence (helpers joining) feel good.
 - Things reviewers rejected: whooshes on scene cuts (cheap), effects on the closing and CTA
