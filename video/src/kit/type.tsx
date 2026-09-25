@@ -37,7 +37,8 @@ export function MaskLine({
         fontStyle: italic ? "italic" : "normal",
         fontSize: size,
         lineHeight: 1.02,
-        letterSpacing: "-.04em",
+        letterSpacing: brand.typography.displayTracking ?? "-.04em",
+        wordSpacing: brand.typography.displayWordSpacing ?? "normal",
         color: color ?? brand.colors.foreground,
       }}
     >

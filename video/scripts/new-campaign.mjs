@@ -42,8 +42,8 @@ rootSrc = rootSrc.replace(
 rootSrc = rootSrc.replace(
   "    {/* campaign-compositions",
   `    <Folder name="${slug}">
-      <Composition id="${Pascal}AppStore" component={${Pascal}} durationInFrames={${camel}Frames + POSTER_LEAD} fps={30} width={886} height={1920} defaultProps={{ typed: true }} />
-      <Composition id="${Pascal}Vertical" component={${Pascal}} durationInFrames={${camel}Frames + POSTER_LEAD} fps={30} width={1080} height={1920} defaultProps={{ typed: true }} />
+      <Composition id="${Pascal}AppStore" component={${Pascal}} durationInFrames={${camel}Frames + POSTER_LEAD} fps={30} width={886} height={1920} defaultProps={{ typed: true, posterLead: true }} />
+      <Composition id="${Pascal}Vertical" component={${Pascal}} durationInFrames={${camel}Frames} fps={30} width={1080} height={1920} defaultProps={{ typed: true }} />
       <Composition id="${Pascal}Masked" component={${Pascal}} durationInFrames={${camel}Frames} fps={30} width={1080} height={1920} defaultProps={{ typed: false }} />
     </Folder>
     {/* campaign-compositions`,

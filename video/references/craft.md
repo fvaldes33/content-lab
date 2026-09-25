@@ -34,6 +34,11 @@ App Store preview. Treat these as defaults with reasons, not laws.
   family (tempo range, instrument, drum feel) so a brand sounds consistent, and a seed picks
   the key, mode, progression and patterns so campaigns don't sound identical. Reroll with
   `--seed`, then pin the printed settings in `timing.json` once the creator likes one.
+- Pick the energy on purpose: `warm`/`bright`/`driving`/`calm` sit under the product (App Store
+  previews, walkthroughs); `hype` (140–152 BPM, sidechained stabs, risers and impacts into
+  every scene) and `euphoric` (festival anthem with a lead hook) are for launch and hype cuts.
+  A campaign can override the brand's mood in `timing.json` `sound.mood`. `sound.break` names a
+  scene (a flash or transition beat) where the drums drop out and a riser builds back in.
 - A music bed with a groove that kicks in when the product appears.
 - Sparse UI sounds: a pop per popout, a tick per check/stamp/tap, a low hit on scene
   landings. Rising pitches for a sequence (helpers joining) feel good.

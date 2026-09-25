@@ -7,13 +7,14 @@ import { LaunchDemo, launchDemoFrames } from "../campaigns/launch-demo/LaunchDem
 
 // Every campaign registers here. Formats:
 //   App Store preview (iPhone 6.9"): 886×1920 · Reels/TikTok/Shorts: 1080×1920.
-// Typed variants add a 2-frame poster lead, so they run POSTER_LEAD frames longer.
+// Only App Store compositions get the 2-frame poster lead (and run POSTER_LEAD frames longer);
+// on social it would flicker the hook.
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="BrandCheck" component={BrandCheck} durationInFrames={1} fps={30} width={1080} height={1920} />
     <Folder name="launch-demo">
-      <Composition id="LaunchDemoAppStore" component={LaunchDemo} durationInFrames={launchDemoFrames + POSTER_LEAD} fps={30} width={886} height={1920} defaultProps={{ typed: true }} />
-      <Composition id="LaunchDemoVertical" component={LaunchDemo} durationInFrames={launchDemoFrames + POSTER_LEAD} fps={30} width={1080} height={1920} defaultProps={{ typed: true }} />
+      <Composition id="LaunchDemoAppStore" component={LaunchDemo} durationInFrames={launchDemoFrames + POSTER_LEAD} fps={30} width={886} height={1920} defaultProps={{ typed: true, posterLead: true }} />
+      <Composition id="LaunchDemoVertical" component={LaunchDemo} durationInFrames={launchDemoFrames} fps={30} width={1080} height={1920} defaultProps={{ typed: true }} />
       <Composition id="LaunchDemoMasked" component={LaunchDemo} durationInFrames={launchDemoFrames} fps={30} width={1080} height={1920} defaultProps={{ typed: false }} />
     </Folder>
     {/* campaign-compositions (scripts/new-campaign.mjs inserts above this line) */}

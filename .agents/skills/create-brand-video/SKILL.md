@@ -52,6 +52,9 @@ For each product moment, in order of preference:
    the kit lacks; match the real UI.
 3. **Screenshots** in `public/campaigns/<slug>/` via `<Screenshot src=… device />`.
 
+Deliver social cuts from `<Pascal>Vertical` (no poster lead) and App Store previews from
+`<Pascal>AppStore` (2-frame poster lead so the first frame reads as the full line).
+
 Never invent features, metrics, integrations or customers. When you write plausible demo
 copy (names, what a helper is doing), ground it in `product.md` and list those lines for
 the creator. Demo data never includes real customers' names or data.
@@ -80,7 +83,9 @@ fix and re-render before showing anything. Then show the creator the contact she
 
 1. `npm run score -- <slug>` (edit `sound.events` in timing.json first: pops for popouts,
    ticks for checks and taps, hits on scene landings, `step` 0–9 for in-key pitch with
-   rising steps for sequences; keep the close and CTA clean). The score is unique per brand
+   rising steps for sequences; keep the close and CTA clean). For hype or launch cuts set
+   `sound.mood` to `hype` or `euphoric` in timing.json (and `sound.break` for a flash scene)
+   instead of writing a campaign-specific score script. The score is unique per brand
    and campaign; if the creator dislikes it, reroll with `--seed <anything>`, and once they
    like one, pin the printed settings into timing.json `sound` so re-renders keep it.
 2. Full render: `npm run render -- <Pascal>Vertical out/<slug>-vertical.mp4` and/or
@@ -96,6 +101,11 @@ Feedback usually lands as pacing ("too fast"), density ("too much at once") or c
 change holds and spacing in `timing.json`, never the clock. Density: land the dense surface
 clean, hold, then dim/blur it as popouts take focus. Keep every prior render; name new ones
 `-v2`, `-v3`. Log each round in the brief's review log.
+
+Never edit `src/kit/` for one brand's taste: brand-level looks (display spacing, colors, fonts,
+music mood) belong in `brand/brand.ts`; one campaign's needs belong in its folder (custom
+surfaces in `campaigns/<slug>/surfaces.tsx`). Improve the kit only for something every brand
+would want, and say so.
 
 ## Boundaries
 

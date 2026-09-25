@@ -35,6 +35,12 @@ export type BrandPack = {
     display: string;
     body: string;
     displayWeight: number;
+    /** Letter spacing for display headlines. Default "-.04em" suits most serifs and
+     * geometric sans; heavy or wide faces (e.g. Clash Display) usually want "-.02em" to "-.03em". */
+    displayTracking?: string;
+    /** Extra word spacing for display headlines, e.g. ".08em" when tight tracking makes
+     * words run together. Default "normal". */
+    displayWordSpacing?: string;
     /** Use the display face in italic for emphasis words (needs an italic face loaded). */
     italicEmphasis: boolean;
     fonts: BrandFont[];
@@ -53,7 +59,9 @@ export type BrandPack = {
   /** Music identity for generated scores (video/scripts/score.py). Every video from the
    * brand shares the family (tempo range, instrument, drum feel); each campaign varies. */
   sound?: {
-    mood: "warm" | "bright" | "driving" | "calm";
+    /** warm/bright/driving/calm: a soft bed under the product (≈ -17 LUFS).
+     * hype/euphoric: club energy for launch and hype cuts (≈ -13 LUFS). */
+    mood: "warm" | "bright" | "driving" | "calm" | "hype" | "euphoric";
   };
   voice: {
     tone: string[];

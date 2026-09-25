@@ -255,10 +255,16 @@ function Timeline({ withAudio }: { withAudio: boolean }) {
 
 export const launchDemoFrames = totalFrames(timing);
 
-export const LaunchDemo: React.FC<{ typed?: boolean; muted?: boolean }> = ({ typed = true, muted = false }) => (
+// posterLead: only for App Store previews, where the first frame is shown as a still before
+// autoplay. On social the lead reads as a flicker (full line, gone, then it types/slams in).
+export const LaunchDemo: React.FC<{ typed?: boolean; muted?: boolean; posterLead?: boolean }> = ({
+  typed = true,
+  muted = false,
+  posterLead = false,
+}) => (
   <Stage background={<Field />}>
     <PosterLead
-      frames={typed ? POSTER_LEAD : 0}
+      frames={typed && posterLead ? POSTER_LEAD : 0}
       settledAt={S.open.cues.dock - 2}
       poster={<Timeline withAudio={false} />}
     >
