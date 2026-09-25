@@ -16,10 +16,11 @@ the worked example this skill builds from.
 ## 0. Preconditions
 
 1. `brand/brand.ts` must describe the real product. If its `source` is `"fictional example"`
-   (the Acme placeholder), stop and run the **brand batch of `onboard`** first. Never make a
+   (the Acme placeholder), stop and run `onboard` with **brand assets for a business** (Track B) first. Never make a
    video in placeholder branding.
 2. Read `brand/product.md` (claim boundary), `brand/voice.md`, `brand/visual-language.md`,
-   and `context/profile.md` if present.
+   and `context/profile.md` (who approves, channels, never-show list) and the asset plan in
+   `content/STRATEGY.md` if present.
 3. Setup: `cd video && npm install` if `node_modules` is missing. Check `ffmpeg` and
    `python3 -c "import numpy"`; tell the creator how to install anything missing.
 4. Render `npm run stills -- BrandCheck 0` and look at it: the brand fonts (not a fallback),

@@ -11,7 +11,7 @@ Built and used in public by [Franco Valdes](https://www.instagram.com/itsfrancov
 ```
 AGENTS.md                  Operating rules the agent follows (honesty, claims, privacy, economics)
 .agents/skills/            The five skills (also symlinked into .claude/skills)
-  onboard/                 Interview that builds YOUR profile, strategy, boundaries, and brand pack
+  onboard/                 Interview for personal socials, a business brand, or both
   produce-content-package/ Turns a selected idea into a fact-checked, recording-ready package
   research-feed-patterns/  Live-browses your feeds to study what's working (read-only)
   review-content-performance/ Turns published-post metrics into decisions
@@ -29,7 +29,7 @@ context/                   Your profile (created by /onboard)
 
 1. Install [Claude Code](https://claude.com/claude-code) (or any agent harness that reads `AGENTS.md`).
 2. Use this template → clone your copy → open it in the harness.
-3. Run **`/onboard`**. It interviews you (about 10 minutes) and writes `context/profile.md`, `content/STRATEGY.md`, and your personal boundaries into the rules. Nothing works right until this exists — the whole system keys off who you actually are and what you can honestly claim.
+3. Run **`/onboard`**. It first asks what you're here for: **personal socials**, **brand assets for a business**, or both. Then it interviews you (about 10 minutes) and writes `context/profile.md`, `content/STRATEGY.md`, your boundaries into the rules, and for a business, the `brand/` pack. Nothing works right until this exists — the whole system keys off who you actually are and what you can honestly claim.
 4. Pick an idea, run **`/produce-content-package`**, review every claim, rewrite the script until it sounds like you, shoot it, publish it yourself.
 5. Report your numbers back with **`/review-content-performance`**. Judge nothing on one post.
 
@@ -42,8 +42,9 @@ docks into a header while your real product UI pops out and tells the story, an 
 synthesized score, delivered to App Store preview spec (886×1920) and vertical social
 (1080×1920).
 
-1. Run **`/onboard`** and do the brand batch: point it at your site, repo, design exports or
-   screenshots. It writes `brand/` from your real tokens, fonts, logo and claims.
+1. Run **`/onboard`** and pick **brand assets for a business**: point it at your site, repo,
+   design exports or screenshots. It writes `brand/` from your real tokens, fonts, logo and
+   claims, plus an asset plan.
 2. Run **`/create-brand-video`**. It briefs you, builds your product surfaces, choreographs
    the scenes, shows you stills for approval, scores it, renders, and checks the export.
 3. You review, give notes, and upload it yourself.
